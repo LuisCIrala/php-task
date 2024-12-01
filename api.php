@@ -1,4 +1,5 @@
 <?php
+
 // Ruta del archivo JSON que actúa como base de datos
 define('DB_FILE', 'tasks.json');
 
@@ -30,15 +31,26 @@ function respond($data, $status = 200) {
 
 // Manejo de rutas y métodos
 $requestMethod = $_SERVER['REQUEST_METHOD'];
-$path = isset($_GET['path']) ? $_GET['path'] : '';
+$path = isset($_GET['path']) ? trim($_GET['path']) : '';
 
 // Ruta principal de la API
 if ($path === 'tasks') {
     $tasks = loadTasks();
 
     switch ($requestMethod) {
-        case 'GET': // Obtener todas las tareas
-            respond($tasks);
+        case 'GET': // Sirve para obtener todas las tareas o una tarea específica
+            if (isset($_GET['id'])) { // Si se especifica un id en la URL
+                $id = $_GET['id'];
+                foreach ($tasks as $task) {
+                    if ($task['id'] === $id) {
+                        respond($task); // Devolver la tarea especificada con id
+                        exit; // Asegúrate de que se termine después de responder
+                    }
+                }
+                respond(['error' => 'Tarea no encontrada'], 404); // Si no se encuentra la tarea
+            } else {
+                respond($tasks); // Devuelve todas las tareas si no se especifica un id
+            }
             break;
 
         case 'POST': // Crear una nueva tarea

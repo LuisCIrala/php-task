@@ -1,14 +1,20 @@
-{
-    "1": {
-        "id": "674c8f0621fcc",
-        "title": "Estudiar Php",
-        "description": "Estudiar php para desarrollo web backend",
+[
+    {
+        "id": "674c9fcc5294b",
+        "title": "Nueva tarea de prueba 3 completado",
+        "description": "Descripci\u00f3n de la tarea de prueba completado",
+        "status": "complete"
+    },
+    {
+        "id": "674c9fdc3429a",
+        "title": "Nueva tarea de prueba 1",
+        "description": "Descripci\u00f3n de la tarea de prueba",
         "status": "pending"
     },
-    "2": {
-        "id": "674c8f1befcce",
-        "title": "Estudiar Python",
-        "description": "Estudiar php para analisis de datos",
+    {
+        "id": "674c9fe0b6b3a",
+        "title": "Nueva tarea de prueba 2",
+        "description": "Descripci\u00f3n de la tarea de prueba",
         "status": "pending"
     }
-}
+]
