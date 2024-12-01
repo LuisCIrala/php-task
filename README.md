@@ -2,7 +2,7 @@ Primer paso tener instalado XAMPP en el equipo
 Asegurarce de que el servidor de Apache este corriendo
 ![image](https://github.com/user-attachments/assets/9e7d74c6-e116-4adb-ac66-a2f831fd9246)
 
-Para que se detecte correctamente de forma simple la carpeta debe de estar dentro de tu disco local XAMPP/htdocs
+Para que se detecte correctamente de forma simple la carpeta del proyecto debe de estar dentro de tu disco local XAMPP/htdocs
 
 Una vez dentro acceder al repositorio con el siguiente link
 ![image](https://github.com/user-attachments/assets/88c13df8-b2da-4842-b56f-a6726ad488e9)
