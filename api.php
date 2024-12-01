@@ -53,7 +53,7 @@ if ($path === 'tasks') {
             }
             break;
 
-        case 'POST': // Crear una nueva tarea
+        case 'POST': // Crear una nueva tarea con POST
             $data = getRequestData();
             if (isset($data['title'], $data['description'])) {
                 $newTask = [
