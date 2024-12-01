@@ -3,24 +3,30 @@
         "id": "674c9fcc5294b",
         "title": "Nueva tarea de prueba 3 completado",
         "description": "Descripci\u00f3n de la tarea de prueba completado",
-        "status": "complete"
+        "status": "completed"
     },
     {
         "id": "674c9fdc3429a",
         "title": "Nueva tarea de prueba 1",
         "description": "Descripci\u00f3n de la tarea de prueba",
-        "status": "pending"
+        "status": "completed"
     },
     {
         "id": "674c9fe0b6b3a",
-        "title": "Nueva tarea de prueba 2",
-        "description": "Descripci\u00f3n de la tarea de prueba",
-        "status": "pending"
+        "title": "Tarea 4 ",
+        "description": "Descripci\u00f3n de la tarea de prueba de la tarea 4",
+        "status": "completed"
     },
     {
         "id": "674cb808c6c0d",
         "title": "Prueba 4 ",
         "description": "Descripcion de la prueba de la tarea 4",
+        "status": "pending"
+    },
+    {
+        "id": "674cc45e2a775",
+        "title": "Ir a comer",
+        "description": "Recordatorio para ir a comer",
         "status": "pending"
     }
 ]
