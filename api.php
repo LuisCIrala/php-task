@@ -49,6 +49,9 @@ if ($path === 'tasks') {
                 }
                 respond(['error' => 'Tarea no encontrada'], 404); // Si no se encuentra la tarea
             } else {
+                if (empty($tasks)) {
+                    respond(['error' => 'No hay tareas en el archivo JSON'], 404); // Mensaje de depuración
+                }
                 respond($tasks); // Devuelve todas las tareas si no se especifica un id
             }
             break;

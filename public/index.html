@@ -7,20 +7,30 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <!-- Barra de navegación -->
+    <nav class="navbar">
+        <ul class="nav-list">
+            <li><a href="index.html" class="active">Crear Tarea</a></li>
+            <li><a href="tasks.html">Ver Tareas</a></li>
+        </ul>
+    </nav>
+
     <div class="container">
-        <h1>Crear Tarea</h1>
-        <form id="taskForm">
+        <h1 class="page-title">Crear Tarea</h1>
+        <form id="taskForm" class="styled-form">
             <label for="title">Título</label>
             <input type="text" id="title" name="title" required>
             
             <label for="description">Descripción</label>
             <textarea id="description" name="description" required></textarea>
 
-            <button type="submit">Crear Tarea</button>
+            <button type="submit" class="btn-primary">Crear Tarea</button>
         </form>
-        <div id="message"></div>
+        <div id="message" class="message-box"></div>
     </div>
 
     <script src="scripts.js"></script>
 </body>
 </html>
+
+

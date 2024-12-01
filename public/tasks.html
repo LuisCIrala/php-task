@@ -7,9 +7,17 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <!-- Barra de navegación -->
+    <nav class="navbar">
+        <ul class="nav-list">
+            <li><a href="index.html">Crear Tarea</a></li>
+            <li><a href="tasks.html" class="active">Ver Tareas</a></li>
+        </ul>
+    </nav>
+
     <div class="container">
-        <h1>Lista de Tareas</h1>
-        <table id="tasksTable">
+        <h1 class="page-title">Lista de Tareas</h1>
+        <table id="tasksTable" class="styled-table">
             <thead>
                 <tr>
                     <th>ID</th>
@@ -20,10 +28,9 @@
                 </tr>
             </thead>
             <tbody>
-                <!-- Las tareas se agregarán aquí dinámicamente -->
+                <!-- Las tareas se cargarán aquí -->
             </tbody>
         </table>
-        <a href="index.html">Volver a Crear Tarea</a>
     </div>
 
     <script src="scripts.js"></script>
