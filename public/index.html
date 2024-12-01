@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crear Tarea</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Crear Tarea</h1>
+        <form id="taskForm">
+            <label for="title">Título</label>
+            <input type="text" id="title" name="title" required>
+            
+            <label for="description">Descripción</label>
+            <textarea id="description" name="description" required></textarea>
+
+            <button type="submit">Crear Tarea</button>
+        </form>
+        <div id="message"></div>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
